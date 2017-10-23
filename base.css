@@ -1,8 +1,18 @@
 body {
   background-color: #fbf5f3;
+  font-family: "Lora","open sans","HelveticaNeue-Light",
+                "Helvetica Neue Light","Helvetica Neue",
+                "Arial","Lucida Grande","sans-serif";
 }
 
-h1,h3,a {
+img {
+  width: 25%;
+  /*height: auto;*/
+  margin: 10px 550px;
+}
+h1,h3 {
+  font-family: "Lora","open sans","HelveticaNeue-Light";
   text-align: center;
   color: #522b47;
+  margin: inherit;
 }

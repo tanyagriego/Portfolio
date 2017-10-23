@@ -10,9 +10,9 @@ img {
   /*height: auto;*/
   margin: 10px 550px;
 }
-h1,h3 {
+p {
   font-family: "Lora","open sans","HelveticaNeue-Light";
   text-align: center;
-  color: #522b47;
+  color: #7b0828;
   margin: inherit;
 }

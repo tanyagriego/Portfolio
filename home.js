@@ -7,7 +7,3 @@ var Project = function (projectInfo) {
   this.technologies = projectInfo.technologies;
   this.repo = projectInfo.repo;
 };
-
-function myFunction(x) {
-    x.classList.toggle("change");
-}

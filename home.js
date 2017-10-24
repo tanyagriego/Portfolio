@@ -1,51 +1,13 @@
-var Project = function (title, date, image, link, description, technologies, repo) {
-  this.title = title;
-  this.date = date;
-  this.image= image;
-  this.link= link;
-  this.description = description;
-  this.technologies = technologies;
-  this.repo = repo;
+var Project = function (projectInfo) {
+  this.title = projectInfo.title;
+  this.date = projectInfo.date;
+  this.image= projectInfo.image;
+  this.link= projectInfo.link;
+  this.description = projectInfo.description;
+  this.technologies = projectInfo.technologies;
+  this.repo = projectInfo.repo;
 };
 
-var projects = [
-  {
-    title: "Crop Swap",
-    date:
-    image: "img.jpg";
-    link:
-    description: "something",
-    technologies: "techUsed",
-    repo: "linkhere",
-  };
-
-  {
-    title: "Grandmother Trivia",
-    date:
-    image: "img.jpg";
-    link:
-    description: "something",
-    technologies: "techUsed",
-    repo: "linkhere",
-  };
-
-  {
-    title: "Market analysis App",
-    date:
-    image: "img.jpg";
-    link:
-    description: "something",
-    technologies: "techUsed",
-    repo: "linkhere",
-  };
-
-  {
-    title: "Salmon Cookies",
-    date:
-    image: "img.jpg";
-    link:
-    description: "something",
-    technologies: "techUsed",
-    repo: "linkhere",
-  };
-]
+function myFunction(x) {
+    x.classList.toggle("change");
+}

@@ -1,0 +1,5 @@
+/*(this file would import all css files)*/
+@import 'icons.css';
+@import 'base.css';
+@import 'module.css';
+@import 'layout.css';

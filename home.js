@@ -12,14 +12,12 @@ Project.prototype.toHtml = function () {
   var $newProject = $('.project-template').clone();
   $newProject.removeClass("project-template");
   $newProject.find ('.title').text(this.title);
-  $newProject.find('.image').text(this.image);
+  $newProject.find('img').attr('src', this.image);
   $newProject.find('.link').text(this.link);
   $newProject.find('.date').text(this.date);
   $newProject.find('.description').text(this.description);
   $newProject.find('.technologies').text(this.technologies);
   $newProject.find('.repo').text(this.repo);
-
-
   return $newProject;
 };
 

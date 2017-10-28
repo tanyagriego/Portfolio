@@ -1,5 +1,5 @@
 body {
-  background-color: #f5f6f7;
+  /*background-color: #f5f6f7;*/
   font-family: "Lora","open sans","HelveticaNeue-Light",
                 "Helvetica Neue Light","Helvetica Neue",
                 "Arial","Lucida Grande","sans-serif";
@@ -26,6 +26,10 @@ img {
   margin: 10px auto;
   position: relative;
 
+}
+
+.main-nav {
+  align-items: right;
 }
 
 /*color: #06BC9B; color for other shit*/

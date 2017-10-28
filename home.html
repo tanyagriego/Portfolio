@@ -7,57 +7,61 @@
 </head>
 <body>
   <header>
-    <img src="images/profile.jpg" alt="profilePic">
-    <p class="name">Tanya Griego</h3>
-    <p class="tagline">Developer in the making</p>
-    <a href="https://github.com/tanyagriego/">GitHub</a><br>
-    <a href="https://www.linkedin.com/in/tanyagriego/">LinkedIn</a>
+    <nav class="main-nav">
+      <span class="icon icon-menu"></span>
+      <ul class= "navTab">
+        <li>Home</li>
+        <li>Projects</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
   </header>
-<!-- Main Navigation -->
-  <nav class="main-nav">
-    <span class="icon icon-menu"></span>
-    <ul class= "navTab">
-      <li>Home</li>
-      <li>Projects</li>
-      <li>About</li>
-      <li>Contact</li>
-    </ul>
-  </nav>
-<!-- Home Section -->
-  <section id="home"></section>
-<!-- /Projects section/ -->
-  <section id="projects">
+  <!-- Main Navigation -->
+  <!-- Home Section -->
+  <section id="home">
+    <!-- <img src="images/profile.jpg" alt="profilePic"> -->
+    <p class="name">Tanya Griego</h3>
+      <p class="tagline">Developer in the making</p>
+      <a href="https://github.com/tanyagriego/">GitHub</a><br>
+      <a href="https://www.linkedin.com/in/tanyagriego/">LinkedIn</a>
+    </section>
+    <!-- /Projects section/ -->
+    <section id="projects">
+      <div class= "container">
+        <header>
+          <h1>Projects</h1>
+        </header>
+        <article class="project-template" data-category="">
+          <h1 class="title"></h1>
+          <img src=""/>
+          <time class ="date"></time>
+          <p class= "description"></p>
+          <ul class = "technologies"></ul>
+          <link class= "repo">
+        </div>
+      </artcile>
+    </section>
+    <!-- About Section -->
+    <section id="about"></section>
     <div class= "container">
-    <header>
-      <h1>Projects</h1>
-    </header>
-    <article class = "photoArea">
-      <figure>
-        <picture>
-          <img src="images/crop.jpg" alt="project 1"
-        </picture>
-      <figure>
-    </article>
-    <article class="project-template" data-category="">
-      <h1 class="title"></h1>
-        <img src=""/>
-        <time class ="date"></time>
-        <p class= "description"></p>
-        <ul class = "technologies"></ul>
-        <link class= "repo">
-      </div>
-    </artcile>
-  </section>
-
-  <section id="about"></section>
-
-  <section id="contact"></section>
-
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
-  <script src="projects.js"></script>
-  <script src="home.js"></script>
-</body>
-</html>
+      <header>
+        <h1>About</h1>
+      </header>
+      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed et lacinia leo, ut lacinia ex. In eget suscipit diam. Nullam lectus tellus, vulputate sed libero sodales, rutrum sodales erat. Suspendisse placerat sed tellus id luctus. Morbi suscipit semper sollicitudin. Etiam quis quam pretium, tincidunt lacus nec, tincidunt nibh. Curabitur viverra, sem eu pharetra finibus, tortor mi dapibus diam, et egestas diam arcu nec diam. Proin leo tellus, venenatis vel diam vitae, ultrices pellentesque ex.</p>
+      <!-- Contact Section -->
+      <section id="contact"></section>
+      <div class= "container">
+        <header>
+          <h1>Contact</h1>
+          <p>Contact form here</p>
+        </header>
+        <!-- Script tags -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+        <script src="projects.js"></script>
+        <script src="home.js"></script>
+      </body>
+      </html>

@@ -1,7 +1,13 @@
 .main-nav {
   padding: 0.1em;
+  height: 10px;
+  position: fixed;
+  /*bottom: 0;*/
+  right: ;
+  width: 300px;
+  /*text-align: right;*/
+  /*margin-right: 10px;*/
 }
-
 .main-nav ul {
   display: none;
   padding: 0;

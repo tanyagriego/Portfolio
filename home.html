@@ -59,22 +59,21 @@
           <header>
             <h1>Contact</h1>
           </header>
-          <h3>Contact Tanya</h3>
+          <h4 class= "contactHeader">Feel free to contact Tanya with questions</h4>
           <form name="new-artcile" id="newArticle">
             <fieldset>
-              <legend>Your Contact Information</legend>
-              <label for="title">Title</label>
-              <input name="title" id="title" type="text">
-              <label for="firstName">First Name:</label>
-              <input name="first-name" id="firstName" type="text">
-              <label for="lastName">Last Name:</label>
-              <input name="last-name" id="lasttName" type="text">
-              <label for="email">E-mail:</label>
-              <input name="e-mail" id="email">
-            </fieldset>
-            Your Message:<br>
-            <textarea name= "content" id="content"></textarea><br>
-            <input type="submit" value="Submit">
+              <!-- <legend>Your Contact Information</legend> -->
+              <!-- <label for="firstName"> First Name:</label> -->
+              <input name="first-name" id="firstName" type="text" placeholder="First Name">
+              <!-- <label for="lastName">Last Name:</label> -->
+              <input name="last-name" id="lasttName" type="text" placeholder="Last Name">
+              <!-- <label for="email">E-mail:</label> -->
+              <input name="e-mail" id="email" placeholder="Your E-mail">
+            </fieldset><br>
+            <textarea name= "content" id="content" placeholder="What's on your mind?"></textarea><br>
+            <input type="button" value="Show Preview" id= "showPreview">
+            <input type="submit" value="Send Message">
+            <div id="preview"></div>
           </form>
         </div>
         </section>
@@ -85,5 +84,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
         <script src="projects.js"></script>
         <script src="home.js"></script>
+        <!-- <script type= "text/javascript" src="form.js"></script> -->
       </body>
       </html>

@@ -26,7 +26,7 @@ projects.forEach(function(project) {
   $('#projects').append(newProject.toHtml());
 });
 
-$(function() {
-  $('li').attr('id','home');
-
-});
+// $(function() {
+//   $('li').attr('id','home');
+//
+// });

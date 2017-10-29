@@ -2,17 +2,8 @@
   background-color: #FFD6C0;
   color:#0B3954;
   min-width: 100vw;
-  min-height:100vh;
   position: relative;
-  /*top:130px;*/
-  /*z-index: -1;*/
-  /*background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: block;
-  margin: 0;*/*/
 
-  /*body: #06BC9B;*/
 }
 #projects {
   background-color: #F5F7DC;
@@ -27,6 +18,6 @@ background-color: #F0B67F;
   background-color: #A9FBC3;
 }
 
-.name,.tagline,.GitHub {
+.name,.tagline,{
   text-align: center;
 }

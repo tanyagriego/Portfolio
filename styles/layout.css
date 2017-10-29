@@ -11,11 +11,14 @@
 }
 
 #about {
-  background-color: #F0B67F;
+  background-color: white;
+  /*background-color: #F0B67F;*/
+  color: #494949;
 }
 
 #contact {
-  background-color: #A9FBC3;
+  background-color: #421820;
+  color: #CD5D67;
 }
 
 .name,.tagline,{

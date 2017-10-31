@@ -26,7 +26,14 @@ projects.forEach(function(project) {
   $('#projects').append(newProject.toHtml());
 });
 
-// $(function() {
-//   $('li').attr('id','home');
-//
-// });
+function handleMainNav() {
+  $('.main-nav').on('click', 'tab', function() {
+    $('.tab').hide();
+    var tabName = '#' + $(this).attr('data-content');
+    $(tabName).show();
+  })
+};
+
+$(document).ready(function() {
+handleMainNav ();
+})

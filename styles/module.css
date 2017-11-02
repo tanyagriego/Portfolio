@@ -1,12 +1,8 @@
 .main-nav {
   padding: 0.1em;
-  height: 10px;
   position: fixed;
-  /*bottom: 0;*/
-  right: ;
-  width: 300px;
-  /*text-align: right;*/
-  /*margin-right: 10px;*/
+  width: 100%;
+  text-align: right;
 }
 .main-nav ul {
   display: none;
@@ -20,6 +16,7 @@
 }
 
 .main-nav li {
+  /*display: block;*/
   margin-right: .4em;
   font-size: 1.5em;
   padding: .5em .2em;
@@ -28,4 +25,8 @@
 
 .project-template {
   display: none;
+}
+
+.icon .icon-menu {
+  float:right;
 }

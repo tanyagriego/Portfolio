@@ -27,8 +27,8 @@ projects.forEach(function(project) {
 });
 
 function handleMainNav() {
-  $('.main-nav').on('click', 'tab', function() {
-    $('.tab').hide();
+  $('.main-nav').on('click', '.tab', function() {
+    $('.tab-content').hide();
     var tabName = '#' + $(this).attr('data-content');
     $(tabName).show();
   })

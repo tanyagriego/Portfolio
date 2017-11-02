@@ -11,78 +11,78 @@
       <div class="icon icon-menu"></div>
       <ul>
         <li class= "tab" data-content="home"><a href="#">Home</li>
-        <li class= "tab" data-content="projects"><a href="#">Projects</li>
-        <li class= "tab" data-content="about"><a href="#">About</li>
-        <li class= "tab" data-content="contact"><a href="#">Contact</li>
-      </ul>
-    </nav>
-    </header>
-  <section class = "tab-content" id="home">
-    <!-- <img src="images/profile.jpg" alt="profilePic"> -->
-      <h3 class="name">Tanya Griego</h3>
-      <p class="tagline">Developer in the making</p>
-      <a href="https://github.com/tanyagriego/" target="_blank" class="icon-github"></a></li>
-      <a href="https://www.linkedin.com/in/tanyagriego/" target="_blank" class="icon-linkedin"></a></li>
-      </section>
-    <!-- /Projects section/ -->
-    <section class = "tab-content" id="projects">
-      <div class= "container">
-        <header>
-          <h1>Projects</h1>
-        </header>
-        <article class="project-template" data-category="">
-          <h1 class="title"></h1>
-          <img src=""/>
-          <time class ="date"></time>
-          <p class= "description"></p>
-          <ul class = "technologies"></ul>
-          <link class= "repo">
-        </div>
-      </artcile>
-    </section>
-    <!-- About Section -->
-    <section class = "tab-content" id="about">
-      <div class= "container">
-        <header>
-          <h1>About</h1>
-        </header>
-        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed et lacinia leo, ut lacinia ex. In eget suscipit diam. Nullam lectus tellus, vulputate sed libero sodales, rutrum sodales erat. Suspendisse placerat sed tellus id luctus. Morbi suscipit semper sollicitudin. Etiam quis quam pretium, tincidunt lacus nec, tincidunt nibh. Curabitur viverra, sem eu pharetra finibus, tortor mi dapibus diam, et egestas diam arcu nec diam. Proin leo tellus, venenatis vel diam vitae, ultrices pellentesque ex.</p>
-        <p>Cras quis velit sit amet enim euismod mattis. Cras ultricies est id urna volutpat, lobortis vulputate risus tincidunt. Nulla aliquet lectus eu lectus rhoncus, et bibendum velit maximus. Pellentesque sed semper turpis. Fusce lobortis, nisl ac condimentum elementum, orci risus egestas ante, eget pretium lectus nibh quis libero. Pellentesque lacinia, mauris in aliquam tincidunt, metus enim posuere ipsum, nec posuere elit massa sit amet ex. Donec eget est eu nibh pulvinar luctus a non ipsum.</p>
-        <p>Nullam pellentesque justo diam, vitae fermentum nisl mollis interdum. Nulla facilisi. Nullam sodales dui ut ante auctor placerat. Sed a felis ut velit varius hendrerit. Suspendisse at ipsum neque. Nam neque quam, fringilla in consectetur ac, rhoncus at ligula. Ut fringilla congue diam sed iaculis. Phasellus sodales nec magna vel blandit. Curabitur euismod nisi at nibh feugiat condimentum. Nullam non velit ut massa fringilla convallis. Duis ac leo ac eros tincidunt consectetur eu varius elit. Praesent nec ipsum sapien.</p>
-      </section>
-      <!-- Contact Section -->
-      <section class = "tab-content" id="contact">
-        <div class= "container">
-          <header>
-            <h1>Contact</h1>
+          <li class= "tab" data-content="projects"><a href="#">Projects</li>
+            <li class= "tab" data-content="about"><a href="#">About</li>
+              <li class= "tab" data-content="contact"><a href="#">Contact</li>
+              </ul>
+            </nav>
           </header>
-          <h4 class= "contactHeader">Feel free to contact Tanya with questions</h4>
-          <form name="new-artcile" id="newArticle">
-            <fieldset>
-              <!-- <legend>Your Contact Information</legend> -->
-              <!-- <label for="firstName"> First Name:</label> -->
-              <input name="first-name" id="firstName" type="text" placeholder="First Name">
-              <!-- <label for="lastName">Last Name:</label> -->
-              <input name="last-name" id="lasttName" type="text" placeholder="Last Name">
-              <!-- <label for="email">E-mail:</label> -->
-              <input name="e-mail" id="email" placeholder="Your E-mail">
-            </fieldset><br>
-            <textarea name= "content" id="content" placeholder="What's on your mind?"></textarea><br>
-            <input type="button" value="Show Preview" id= "showPreview">
-            <input type="submit" value="Send Message">
-            <div id="preview"></div>
-          </form>
-        </div>
-        </section>
-        <!-- Script tags -->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
-        <script src="js/projects.js"></script>
-        <script src="js/home.js"></script>
-        <script src="portfolioView.js"></script>
-
-        <!-- <script type= "text/javascript" src="form.js"></script> -->
-      </body>
-      </html>
+          <section class = "tab-content" id="home">
+            <!-- <img src="images/profile.jpg" alt="profilePic"> -->
+            <h3 class="name">Tanya Griego</h3>
+            <p class="tagline">Developer in the making</p>
+            <a href="https://github.com/tanyagriego/" target="_blank" class="icon-github"></a></li>
+            <a href="https://www.linkedin.com/in/tanyagriego/" target="_blank" class="icon-linkedin"></a></li>
+          </section>
+          <!-- /Projects section/ -->
+          <section class = "tab-content" id="projects">
+            <div class= "container">
+              <header>
+                <h1>Projects</h1>
+              </header>
+              <script id= "project-templateHB" type="text/x-handlebars-template">
+                <article class="project-template" data-category="">
+                  <h1 class="title">{{title}}</h1>
+                  <img src=""/>
+                  <time class ="date">{{date}}</time>
+                  <p class= "description">{{description}}</p>
+                  <ul class = "technologies">{{technologies}}</ul>
+                  <link class= "repo">
+                </div>
+              </artcile>
+            </script>
+          </section>
+          <!-- About Section -->
+          <section class = "tab-content" id="about">
+            <div class= "container">
+              <header>
+                <h1>About</h1>
+              </header>
+              <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed et lacinia leo, ut lacinia ex. In eget suscipit diam. Nullam lectus tellus, vulputate sed libero sodales, rutrum sodales erat. Suspendisse placerat sed tellus id luctus. Morbi suscipit semper sollicitudin. Etiam quis quam pretium, tincidunt lacus nec, tincidunt nibh. Curabitur viverra, sem eu pharetra finibus, tortor mi dapibus diam, et egestas diam arcu nec diam. Proin leo tellus, venenatis vel diam vitae, ultrices pellentesque ex.</p>
+              <p>Cras quis velit sit amet enim euismod mattis. Cras ultricies est id urna volutpat, lobortis vulputate risus tincidunt. Nulla aliquet lectus eu lectus rhoncus, et bibendum velit maximus. Pellentesque sed semper turpis. Fusce lobortis, nisl ac condimentum elementum, orci risus egestas ante, eget pretium lectus nibh quis libero. Pellentesque lacinia, mauris in aliquam tincidunt, metus enim posuere ipsum, nec posuere elit massa sit amet ex. Donec eget est eu nibh pulvinar luctus a non ipsum.</p>
+              <p>Nullam pellentesque justo diam, vitae fermentum nisl mollis interdum. Nulla facilisi. Nullam sodales dui ut ante auctor placerat. Sed a felis ut velit varius hendrerit. Suspendisse at ipsum neque. Nam neque quam, fringilla in consectetur ac, rhoncus at ligula. Ut fringilla congue diam sed iaculis. Phasellus sodales nec magna vel blandit. Curabitur euismod nisi at nibh feugiat condimentum. Nullam non velit ut massa fringilla convallis. Duis ac leo ac eros tincidunt consectetur eu varius elit. Praesent nec ipsum sapien.</p>
+            </section>
+            <!-- Contact Section -->
+            <section class = "tab-content" id="contact">
+              <div class= "container">
+                <header>
+                  <h1>Contact</h1>
+                </header>
+                <h4 class= "contactHeader">Feel free to contact Tanya with questions</h4>
+                <form name="new-artcile" id="newArticle">
+                  <fieldset>
+                    <!-- <legend>Your Contact Information</legend> -->
+                    <!-- <label for="firstName"> First Name:</label> -->
+                    <input name="first-name" id="firstName" type="text" placeholder="First Name">
+                    <!-- <label for="lastName">Last Name:</label> -->
+                    <input name="last-name" id="lasttName" type="text" placeholder="Last Name">
+                    <!-- <label for="email">E-mail:</label> -->
+                    <input name="e-mail" id="email" placeholder="Your E-mail">
+                  </fieldset><br>
+                  <textarea name= "content" id="content" placeholder="What's on your mind?"></textarea><br>
+                  <input type="button" value="Show Preview" id= "showPreview">
+                  <input type="submit" value="Send Message">
+                  <div id="preview"></div>
+                </form>
+              </div>
+            </section>
+            <!-- Script tags -->
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+            <script src="js/projects.js"></script>
+            <script src="js/home.js"></script>
+            <!-- <script type= "text/javascript" src="form.js"></script> -->
+          </body>
+          </html>

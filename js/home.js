@@ -34,6 +34,21 @@ function handleMainNav() {
   })
 };
 
+Project.prototype.toHtml = function() {
+var templateFiller = Handlebars.compile( $('#project-templateHB').html() );
+var filledTemplate = templateFiller( this );
+return filledTemplate;
+}
+
+projects.forEach ( project => {
+  projects.push (new Project (proj  ect));
+});
+
+Project.forEach ( project => {
+$( '#projects').append( project.toHtml());
+});
+
 $(document).ready(function() {
 handleMainNav ();
+// Project.prototype.toHtml();
 })

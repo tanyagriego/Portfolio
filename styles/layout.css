@@ -1,12 +1,9 @@
 #home {
-  background-color: #FFD6C0;
-  color:#0B3954;
-  min-width: 100vw;
-  margin-top:0px;
+  height:100vh;
 }
 #projects {
-  background-color: #F5F7DC;
-  color:#0B3954;
+  background-color: #2E294E;
+  color:#4c4d4f;
 }
 
 #about {
@@ -23,3 +20,11 @@
 .name,.tagline,{
   text-align: center;
 }
+
+.homeBackground {
+    opacity: .35;
+    width: 100vw;
+    position: absolute;
+    top:0px;
+    z-index: -1;
+};

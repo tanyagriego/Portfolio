@@ -1,14 +1,19 @@
 .main-nav {
+  text-align: right;
+  top: 0;
   padding: 0.1em;
   position: fixed;
   width: 100%;
-  text-align: right;
 }
 .main-nav ul {
+  background-color: black;
   display: none;
-  padding: 0;
   list-style: none;
+  float: right;
   clear: both;
+  padding: 0;
+  margin: 0;
+  width: 200px;
 }
 
 .main-nav:hover ul {
@@ -17,8 +22,8 @@
 
 .main-nav li {
   /*display: block;*/
-  margin-right: .4em;
   font-size: 1.5em;
+  margin-right: .4em;
   padding: .5em .2em;
   border-bottom: 1px solid #ccc;
 }

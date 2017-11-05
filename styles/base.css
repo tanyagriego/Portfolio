@@ -5,7 +5,15 @@ body {
   "Arial","Lucida Grande","sans-serif";
   color: #FCD581;
   margin: 0;
+  font-size: 20px;
+  line-height: 1.25em;
 }
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
 
 .profilePic {
   max-width: 35%;

@@ -13,6 +13,7 @@ function Project (projectInfo) {
 function handleMainNav() {
   $('.main-nav').on('click', '.tab', function() {
     $('.tab-content').hide();
+    $('.homeBackground').hide();
     var tabName= '#' + $(this).attr('data-content');
     $(tabName).show();
   })

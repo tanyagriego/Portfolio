@@ -3,7 +3,6 @@ body {
   font-family: "Lora","open sans","HelveticaNeue-Light",
   "Helvetica Neue Light","Helvetica Neue",
   "Arial","Lucida Grande","sans-serif";
-  color: #FCD581;
   margin: 0;
   font-size: 20px;
   line-height: 1.25em;
@@ -13,7 +12,6 @@ h1 {
   text-align: center;
   margin-top: 0;
 }
-
 
 .profilePic {
   max-width: 35%;
@@ -25,5 +23,21 @@ h1 {
   margin: 10px auto;
 }
 
+.name {
+  font-size: 40px;
+  text-shadow: 2px 2px #06BC9B;
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Questrial', sans-serif;  text-align: center;
+}
 
+.tagline {
+  text-align: center;
+}
+
+.projectImages {
+  display: block;
+  border-style: round;
+  width:100%;
+
+}
 /*color: #06BC9B; color for other shit*/

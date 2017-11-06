@@ -1,8 +1,9 @@
 #home {
   height:100vh;
+  color: white;
 }
 #projects {
-  background-color: #2E294E;
+  background-color: #f5f5f5;
   color:#4c4d4f;
 }
 
@@ -13,8 +14,8 @@
 }
 
 #contact {
-  background-color: #421820;
-  color: #CD5D67;
+  background-color: #06BC9B;
+  color: #F0F3BD;
 }
 
 .name,.tagline,{

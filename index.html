@@ -2,12 +2,13 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Cairo|Questrial" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tanya Griego</title>
   <script id= "project-templateHB" type="text/x-handlebars-template">
     <article data-category="">
       <h1 class="title">{{title}}</h1>
-      <img src="{{image}}"/>
+      <img src="{{image}}" class="projectImages"/>
       <time class="date">{{date}}</time>
       <p class="description">{{description}}</p>
       <ul class="technologies">{{technologies}}</ul>
@@ -16,7 +17,7 @@
   </script>
 </head>
 <body>
-  <img src=images/homeBackground.jpg class="homeBackground" />
+  <img src="images/homeBackground.jpg" class="homeBackground" />
   <header>
     <nav class="main-nav">
       <div class="icon icon-menu"></div>
@@ -61,10 +62,9 @@
         <fieldset>
           <input name="first-name" id="firstName" type="text" placeholder="First Name">
           <input name="last-name" id="lasttName" type="text" placeholder="Last Name">
-          <input name="e-mail" id="email" placeholder="Your E-mail">
+          <input name="e-mail" id="email" type="text" placeholder="Your E-mail">
         </fieldset><br>
         <textarea name="content" id="content" placeholder="What's on your mind?"></textarea><br>
-        <input type="button" value="Show Preview" id="showPreview">
         <input type="submit" value="Send Message">
         <div id="preview"></div>
       </form>

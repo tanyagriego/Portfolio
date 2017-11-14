@@ -2,8 +2,9 @@
   color: #494949;
   opacity: 1;
   text-align: right;
-  top: 5px;
-  right: 15px;
+  margin-top: -10px;
+  top: -82px;
+  right: -95px;
   padding: -0.1em;
   position: fixed;
   width: 100%;
@@ -38,4 +39,9 @@
 
 .icon .icon-menu {
   float:right;
+  position: fixed;
+}
+
+.icon {
+  margin: 100px;
 }

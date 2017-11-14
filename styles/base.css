@@ -24,21 +24,38 @@ h1 {
 }
 
 .name {
-  font-size: 24px;
-  color: white;
-  /*color: #06BC9B;*/
-  text-shadow: 2px 2px #63707e;
-  /*text-shadow: 2px 2px #06BC9B;*/
-  font-family: 'Cairo', sans-serif;
-  font-family: 'Questrial', sans-serif;  text-align: center;
+  font-family: "Lora","open sans","HelveticaNeue-Light",
+  "Helvetica Neue Light","Helvetica Neue",
+  "Arial","Lucida Grande","sans-serif";
+  color: #494949;
+  font-weight: lighter;
+  text-align: left;
+  display: inline-block;
+  position: fixed;
+  margin-top: -10px;
+  margin-left: -10px;
 }
 
-.tagline {
+.jobTitle {
+  font-size: 100px;
+  color: white;
+  text-shadow: 2px 2px #06BC9B;
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Questrial', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  line-height: 74px;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  display: block;
+}
+
+/*.tagline {
   text-align: center;
   font-size: 20px;
   color: #63707e;
   text-shadow: 1px 1px #06BC9B;
-}
+}*/
 
 .projectImages {
   display: block;

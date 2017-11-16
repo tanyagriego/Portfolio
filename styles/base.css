@@ -38,24 +38,25 @@ h1 {
 
 .jobTitle {
   font-size: 70px;
-  color: white;
-  text-shadow: 2px 2px #06BC9B;
+  color: #FCFCFC;
+  text-shadow: 2px 2px black;
   font-family: 'Cairo', sans-serif;
   font-family: 'Questrial', sans-serif;
   font-weight: lighter;
   text-align: center;
   line-height: 74px;
   margin-top: 40px;
-  /*margin-bottom: -80px;*/
+  margin-bottom: 20px;
   display: block;
 }
 
-/*.tagline {
+.tagline {
 text-align: center;
-font-size: 20px;
-color: #63707e;
+font-size: 23px;
+font-style: italic;
+color: #FCFCFC;
 text-shadow: 1px 1px #06BC9B;
-}*/
+}
 
 .projectImages {
   display: block;

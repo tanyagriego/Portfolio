@@ -19,6 +19,8 @@ function handleMainNav() {
   })
 };
 
+// $('.mainNav').on(click,)
+
 Project.prototype.toHtml= function() {
 var templateFiller= Handlebars.compile( $('#project-templateHB').html() );
 var filledTemplate= templateFiller(this);

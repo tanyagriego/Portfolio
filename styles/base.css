@@ -38,8 +38,8 @@ h1 {
 
 .jobTitle {
   font-size: 70px;
-  color: #FCFCFC;
-  text-shadow: 2px 2px black;
+  color: white;
+  text-shadow: 3px 3px #06BC9B;
   font-family: 'Cairo', sans-serif;
   font-family: 'Questrial', sans-serif;
   font-weight: lighter;
@@ -64,4 +64,6 @@ text-shadow: 1px 1px #06BC9B;
   width:100%;
 
 }
-/*color: #06BC9B; color for other shit*/
+
+.icon-github, .icon-linkedin {
+}

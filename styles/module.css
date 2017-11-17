@@ -9,9 +9,10 @@
   position: fixed;
   width: 100%;
 }
+
 .main-nav ul {
-  background-color: white;
-  color:#06BC9B;
+  background-color: transparent;
+  color: white;
   display: none;
   list-style: none;
   float: right;
@@ -19,6 +20,8 @@
   padding: 0;
   margin: 0;
   width: -90px;
+  position: absolute;
+  z-index: 2;
 }
 
 .main-nav:hover ul {
@@ -31,6 +34,7 @@
   margin-right: 4em;
   padding: .5em .2em;
   border-bottom: 1px solid #ccc;
+  z-index: 2;
 }
 
 .project-template {
@@ -44,4 +48,28 @@
 
 .icon {
   margin: 100px;
+}
+
+/*.modal {
+  background-color: #33C8AD;
+  color: white;
+  left: 50%;
+  position: absolute;
+  top: 40px;
+  transform: translate(left -50%);
+  left: 50%;
+  width: 500px;
+}*/
+
+.modal-overlay {
+  background-color: #06BC9B;
+  bottom: 0;
+  height: 100vh;
+  left: 100;
+  opacity: 0.8;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1000%;
+  z-index: 1;
 }

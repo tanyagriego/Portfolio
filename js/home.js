@@ -31,6 +31,8 @@ function handleMainNav() {
     event.preventDefault();
 
   $('.modal-overlay').addClass('.is-visible');
+
+  $('.modal-overlay').show();
   });
 
 //----------------------------------------------------

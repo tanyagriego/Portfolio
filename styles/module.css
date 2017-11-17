@@ -61,5 +61,11 @@
   right: 0;
   top: 0;
   width: 1000%;
+  visibility: hidden;
   z-index: 1;
+}
+
+.modal-overlay.is-visible {
+  visibility: visible;
+
 }

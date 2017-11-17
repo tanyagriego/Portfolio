@@ -20,18 +20,19 @@ function handleMainNav() {
     $('.homeBackground').hide();
     var tabName= '#' + $(this).attr('data-content');
     $(tabName).show();
-  })
-  //----------------------------------------------------
-  //modal
-  //----------------------------------------------------
-
-  $('.modal-overlay').on('click', function(event) {
-    event.preventDefault();
-
     $('.modal-overlay').addClass('.is-visible');
-  });
-};
+    $('.modal-overlay').show();
+  })
+  // ----------------------------------------------------
+  // modal
+  // ----------------------------------------------------
 
+//   $('.main-nav').on('click', function(event) {
+//     event.preventDefault();
+//
+//   $('.modal-overlay').addClass('.is-visible');
+//   });
+// };
 
 //----------------------------------------------------
 //handlebars template

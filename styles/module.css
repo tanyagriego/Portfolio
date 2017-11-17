@@ -31,9 +31,10 @@
 .main-nav li {
   /*display: block;*/
   font-size: 1.5em;
-  margin-right: 4em;
+  margin-left: 1.5em;
   padding: .5em .2em;
-  border-bottom: 1px solid #ccc;
+  text-align: center;
+  /*border-bottom: 1px solid #ccc;*/
   z-index: 2;
 }
 
@@ -50,24 +51,13 @@
   margin: 100px;
 }
 
-/*.modal {
-  background-color: #33C8AD;
-  color: white;
-  left: 50%;
-  position: absolute;
-  top: 40px;
-  transform: translate(left -50%);
-  left: 50%;
-  width: 500px;
-}*/
-
 .modal-overlay {
   background-color: #06BC9B;
   bottom: 0;
   height: 100vh;
   left: 100;
   opacity: 0.8;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   width: 1000%;

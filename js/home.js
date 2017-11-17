@@ -10,6 +10,10 @@ function Project (projectInfo) {
   this.repo= projectInfo.repo;
 };
 
+//----------------------------------------------------
+//menu Nav
+//----------------------------------------------------
+
 function handleMainNav() {
   $('.main-nav').on('click', '.tab', function() {
     $('.tab-content').hide();
@@ -17,15 +21,31 @@ function handleMainNav() {
     var tabName= '#' + $(this).attr('data-content');
     $(tabName).show();
   })
+  //----------------------------------------------------
+  //modal
+  //----------------------------------------------------
+
+  $('.modal-overlay').on('click', function(event) {
+    event.preventDefault();
+
+    $('.modal-overlay').addClass('.is-visible');
+  });
 };
 
-// $('.mainNav').on(click,)
+
+//----------------------------------------------------
+//handlebars template
+//----------------------------------------------------
 
 Project.prototype.toHtml= function() {
 var templateFiller= Handlebars.compile( $('#project-templateHB').html() );
 var filledTemplate= templateFiller(this);
 return filledTemplate;
 }
+
+//----------------------------------------------------
+//js for new projects
+//----------------------------------------------------
 
 projects.forEach(project => {
   projectArtciles.push (new Project (project));
@@ -34,6 +54,10 @@ projects.forEach(project => {
 projectArtciles.forEach(project => {
 $('#projects').append(project.toHtml());
 });
+
+//----------------------------------------------------
+//call functions
+//----------------------------------------------------
 
 $(document).ready(function() {
 handleMainNav ();

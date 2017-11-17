@@ -38,8 +38,8 @@ h1 {
 
 .jobTitle {
   font-size: 70px;
-  color: white;
-  text-shadow: 3px 3px #06BC9B;
+  color: black;
+  /*text-shadow: 3px 3px black;*/
   font-family: 'Cairo', sans-serif;
   font-family: 'Questrial', sans-serif;
   font-weight: lighter;
@@ -54,7 +54,7 @@ h1 {
 text-align: center;
 font-size: 23px;
 font-style: italic;
-color: #FCFCFC;
+color: black;
 text-shadow: 1px 1px #06BC9B;
 }
 

@@ -38,19 +38,6 @@
   z-index: 2;
 }
 
-.project-template {
-  display: none;
-}
-
-.icon .icon-menu {
-  float:right;
-  position: fixed;
-}
-
-.icon {
-  margin: 100px;
-}
-
 .modal-overlay {
   background-color: #06BC9B;
   bottom: 0;
@@ -67,5 +54,17 @@
 
 .modal-overlay.is-visible {
   visibility: visible;
+}
 
+.project-template {
+  display: none;
+}
+
+.icon .icon-menu {
+  float:right;
+  position: fixed;
+}
+
+.icon {
+  margin: 100px;
 }

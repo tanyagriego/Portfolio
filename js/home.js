@@ -27,14 +27,14 @@ function handleMainNav() {
 // modal
 // ----------------------------------------------------
 
-  $('.main-nav').on('click', function(event) {
-    event.preventDefault();
-
-  $('.modal-overlay').addClass('.is-visible');
-
-  $('.modal-overlay').show();
-  });
-
+// function modalOverlay() {
+//   $('.main-nav').on('click', '' function(event) {
+//     event.preventDefault();
+//   $('.modal-overlay').addClass('.is-visible');
+//
+//   $('.modal-overlay.is-visible').show();
+//   })
+// };
 //----------------------------------------------------
 //handlebars template
 //----------------------------------------------------
@@ -63,5 +63,6 @@ $('#projects').append(project.toHtml());
 
 $(document).ready(function() {
 handleMainNav ();
+// modalOverlay ();
 // Project.prototype.toHtml();
 })

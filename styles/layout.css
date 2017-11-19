@@ -1,7 +1,7 @@
 #home {
   height:100vh;
-  background-color: white;
-  color: white;
+  background-color: #f5f6f7;
+  color: #525d68;
 }
 
 #projects {
@@ -10,9 +10,9 @@
 }
 
 #about {
-  background-color: white;
+  background-color: #f5f6f7;
   /*background-color: #F0B67F;*/
-  color: #494949;
+  color: #525d68;
 }
 
 #contact {

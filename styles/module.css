@@ -60,6 +60,10 @@
   float:right;
   position: fixed;
 }
+.icon-cross {
+  float: right;
+  /*position: fixed;*/
+}
 
 .icon {
   margin: 100px;

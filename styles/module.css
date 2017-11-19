@@ -13,14 +13,10 @@
 .main-nav ul {
   background-color: transparent;
   color: white;
-  display: none;
   list-style: none;
-  float: right;
-  clear: both;
   padding: 0;
-  margin: 0;
-  width: -90px;
-  position: absolute;
+  margin-top: 5em;
+  text-align: center;
   z-index: 2;
 }
 
@@ -33,7 +29,7 @@
   font-size: 1.5em;
   margin-left: 1.5em;
   padding: .5em .2em;
-  text-align: center;
+  /*text-align: center;*/
   /*border-bottom: 1px solid #ccc;*/
   z-index: 2;
 }
@@ -47,7 +43,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  width: 1000%;
+  width: 100%;
   visibility: hidden;
   z-index: 1;
 }

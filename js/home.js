@@ -34,6 +34,13 @@ function modalOverlay() {
   $('.modal-overlay.is-visible').show();
   })
 };
+
+function hideModalOverlay() {
+  $('.icon-cross').on('click', function(event) {
+    event.preventDefault();
+    $('.modal-overlay').hide();
+  })
+};
 //----------------------------------------------------
 //handlebars template
 //----------------------------------------------------
@@ -63,5 +70,6 @@ $('#projects').append(project.toHtml());
 $(document).ready(function() {
 handleMainNav ();
 modalOverlay ();
+hideModalOverlay();
 // Project.prototype.toHtml();
 });

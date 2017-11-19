@@ -17,6 +17,8 @@ function Project (projectInfo) {
 function handleMainNav() {
   $('.main-nav').on('click', '.tab', function() {
     $('.tab-content').hide();
+    $('.modal-overlay').hide();
+
     // $('.homeBackground').hide();
     var tabName= '#' + $(this).attr('data-content');
     $(tabName).show();
@@ -63,6 +65,23 @@ projectArtciles.forEach(project => {
 $('#projects').append(project.toHtml());
 });
 
+//----------------------------------------------------
+//JSON
+//----------------------------------------------------
+
+// Project.fetchAll = function() {
+//   if (localStorage.projectsData) {
+//   Project.loadAll(JSON.parse(localStorage.projectsData));
+//   projectsView.initPage();
+//   } else {
+//   console.log("localStorage doesn't exist");
+//   $.getJSON("/data/portfolioJSON.json", function(data) {
+//     localStorage.setItem ('portfolioData', JSON.stringify(data));
+//     Portfolio.loadAll(data);
+//     portfolioView.initPage();
+//     })
+//   }
+// };
 //----------------------------------------------------
 //call functions
 //----------------------------------------------------

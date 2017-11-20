@@ -1,4 +1,4 @@
-var projectArtciles= [];
+'use strict';
 
 function Project (projectInfo) {
   this.title= projectInfo.title;
@@ -10,85 +10,57 @@ function Project (projectInfo) {
   this.repo= projectInfo.repo;
 };
 
-//----------------------------------------------------
-//menu Nav
-//----------------------------------------------------
+Project.all = [];
 
-function handleMainNav() {
-  $('.main-nav').on('click', '.tab', function() {
-    $('.tab-content').hide();
-    $('.modal-overlay').hide();
-
-    // $('.homeBackground').hide();
-    var tabName= '#' + $(this).attr('data-content');
-    $(tabName).show();
-  })
-};
-
-// ----------------------------------------------------
-// modal
-// ----------------------------------------------------
-
-function modalOverlay() {
-  $('.icon.icon-menu').on('click', function(event) {
-    event.preventDefault();
-  $('.modal-overlay').addClass('is-visible');
-  $('.modal-overlay.is-visible').show();
-  })
-};
-
-function hideModalOverlay() {
-  $('.icon-cross').on('click', function(event) {
-    event.preventDefault();
-    $('.modal-overlay').hide();
-  })
-};
 //----------------------------------------------------
 //handlebars template
 //----------------------------------------------------
 
-Project.prototype.toHtml= function() {
+Project.prototype.toHTML= function() {
 var templateFiller= Handlebars.compile( $('#project-templateHB').html() );
 var filledTemplate= templateFiller(this);
 return filledTemplate;
-}
+};
+
+//----------------------------------------------------
+//JSON
+//----------------------------------------------------
+Project.fetchAll = function() {
+  if(localStorage.projectInfo) {
+    Project.loadAll(JSON.parse(localStorage.projectInfo));
+    projectView.initPage();
+  } else {
+    console.log("localStorage doesn't exist.");
+    $.getJSON("/data/projectsJSON.json", function(data) {
+      localStorage.setItem('projectInfo', JSON.stringify(data));
+      Project.loadAll(data);
+      projectView.initPage();
+    })
+  }
+};
+
+Project.loadAll = function(projects){
+  projects.forEach(function(project){
+    Project.all.push(new Project(project));
+  })
+};
 
 //----------------------------------------------------
 //js for new projects
 //----------------------------------------------------
 
-projects.forEach(project => {
-  projectArtciles.push (new Project (project));
-});
+// projects.forEach(project => {
+//   projectArticles.push (new Project (project));
+// });
 
-projectArtciles.forEach(project => {
-$('#projects').append(project.toHtml());
-});
+// projectArticles.forEach(project => {
+// $('#projects').append(project.toHtml());
+// });
 
-//----------------------------------------------------
-//JSON
-//----------------------------------------------------
-
-// Project.fetchAll = function() {
-//   if (localStorage.projectsData) {
-//   Project.loadAll(JSON.parse(localStorage.projectsData));
-//   projectsView.initPage();
-//   } else {
-//   console.log("localStorage doesn't exist");
-//   $.getJSON("/data/portfolioJSON.json", function(data) {
-//     localStorage.setItem ('portfolioData', JSON.stringify(data));
-//     Portfolio.loadAll(data);
-//     portfolioView.initPage();
-//     })
-//   }
-// };
-//----------------------------------------------------
+// ----------------------------------------------------
 //call functions
 //----------------------------------------------------
 
-$(document).ready(function() {
-handleMainNav ();
-modalOverlay ();
-hideModalOverlay();
-// Project.prototype.toHtml();
-});
+// $(document).ready(function() {
+//
+// });

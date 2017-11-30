@@ -20,12 +20,13 @@
   z-index: 2;
 }
 
-/*.main-nav:hover ul {*/
-  /*display: block;*/
-/*}*/
+/*.main-nav:hover ul {
+  display: block;
+}*/
 
 .main-nav li {
   /*display: block;*/
+  font-family: inherit;
   font-size: 1.5em;
   margin-left: 1.5em;
   padding: .5em .2em;
@@ -59,9 +60,12 @@
 .icon .icon-menu {
   float:right;
   position: fixed;
+
 }
 .icon-cross {
-  float: right;
+  float:right;
+  margin-top: .4em;
+  margin-right: .5em;
   /*position: fixed;*/
 }
 

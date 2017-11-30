@@ -1,6 +1,6 @@
 body {
   /*background-color: #f5f6f7;*/
-  font-family: "Lora","open sans","HelveticaNeue-Light",
+  font-family: "Varela Round","open sans","HelveticaNeue-Light",
   "Helvetica Neue Light","Helvetica Neue",
   "Arial","Lucida Grande","sans-serif";
   margin: 0;
@@ -24,9 +24,7 @@ h1 {
 }
 
 .name {
-  font-family: "Lora","open sans","HelveticaNeue-Light",
-  "Helvetica Neue Light","Helvetica Neue",
-  "Arial","Lucida Grande","sans-serif";
+  font-family: inherit;
   color: #494949;
   font-weight: lighter;
   text-align: left;
@@ -40,8 +38,7 @@ h1 {
   font-size: 70px;
   color: black;
   /*text-shadow: 3px 3px black;*/
-  font-family: 'Cairo', sans-serif;
-  font-family: 'Questrial', sans-serif;
+  font-family: inherit;
   font-weight: lighter;
   text-align: center;
   line-height: 74px;

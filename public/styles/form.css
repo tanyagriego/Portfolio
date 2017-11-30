@@ -1,0 +1,33 @@
+.contactHeader {
+text-align: center;
+margin: 0 0 25px;
+line-height: 1.3;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+form fieldset {
+  border-radius: 4px;
+}
+
+form legend {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+form label {
+  display: inline-block;
+  width: 50%;
+}
+
+form input[type="text"] {
+  font-size: 20px;
+
+}
+form textarea {
+  width:100%;
+  height: 8em;
+}

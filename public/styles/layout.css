@@ -1,0 +1,39 @@
+#home {
+  height:100vh;
+  background-color: #f5f6f7;
+  color: #525d68;
+}
+
+#projects {
+  background-color: #06BC9B;
+  color:#4c4d4f;
+}
+
+#about {
+  background-color: #f5f6f7;
+  /*background-color: #F0B67F;*/
+  color: #525d68;
+}
+
+#contact {
+  background-color: #06BC9B;
+  color: #F0F3BD;
+}
+
+.name,.tagline,{
+  text-align: center;
+}
+
+.homeBackground {
+    opacity: .35;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top:0px;
+    z-index: -1;
+}
+
+.tab-content {
+  padding: 1em;
+  min-height: 100vh;
+}

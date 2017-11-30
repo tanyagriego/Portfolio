@@ -1,0 +1,63 @@
+body {
+  /*background-color: #f5f6f7;*/
+  font-family: "Varela Round","open sans","HelveticaNeue-Light",
+  "Helvetica Neue Light","Helvetica Neue",
+  "Arial","Lucida Grande","sans-serif";
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.25em;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.profilePic {
+  max-width: 35%;
+}
+
+.profilePic  {
+  width: 75%;
+  display: block;
+  margin: 10px auto;
+}
+
+.name {
+  font-family: inherit;
+  color: #494949;
+  font-weight: lighter;
+  text-align: left;
+  display: inline-block;
+  position: fixed;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+.jobTitle {
+  font-size: 70px;
+  color: black;
+  /*text-shadow: 3px 3px black;*/
+  font-family: inherit;
+  font-weight: lighter;
+  text-align: center;
+  line-height: 74px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.tagline {
+text-align: center;
+font-size: 23px;
+font-style: italic;
+color: black;
+text-shadow: 1px 1px #06BC9B;
+}
+
+.projectImages {
+  display: block;
+  border-style: round;
+  width:100%;
+
+}

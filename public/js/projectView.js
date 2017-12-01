@@ -3,16 +3,16 @@ var projectView = {};
 //menu Nav
 //----------------------------------------------------
 
-projectView.handleMainNav = function() {
-  $('.main-nav').on('click', '.tab', function() {
-    $('.tab-content').hide();
-    $('.modal-overlay').hide();
-
-    // $('.homeBackground').hide();
-    var tabName= '#' + $(this).attr('data-content');
-    $(tabName).show();
-  })
-};
+// projectView.handleMainNav = function() {
+//   $('.main-nav').on('click', '.tab', function() {
+//     $('.tab-content').hide();
+//     $('.modal-overlay').hide();
+//
+//     // $('.homeBackground').hide();
+//     var tabName= '#' + $(this).attr('data-content');
+//     $(tabName).show();
+//   })
+// };
 
 // ----------------------------------------------------
 // modal
@@ -46,7 +46,7 @@ projectView.initPage = function() {
 
 
 $(document).ready(function() {
-projectView.handleMainNav ();
+// projectView.handleMainNav ();
 projectView.modalOverlay ();
 projectView.hideModalOverlay();
 Project.fetchAll();

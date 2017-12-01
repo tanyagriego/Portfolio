@@ -1,9 +1,9 @@
   'use strict'
 
-  (function(module)) {
+  (function(module) {
     const projectController = {};
     projectController.index = function() {
-      projectView.initIndexPage();
+      projectView.initPage();
       $('.tab-content').hide();
       $('#home').show();
     }

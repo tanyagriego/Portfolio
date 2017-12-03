@@ -1,27 +1,14 @@
-  'use strict'
+'use strict';
 
-  (function(module) {
-    const projectController = {};
-    projectController.index = function() {
-      projectView.initPage();
+(function(module) {
+  const projectController = {};
+  projectController.showMenuContent = function(menuChoice) {
+    return () => {
       $('.tab-content').hide();
-      $('#home').show();
+      $(`#${menuChoice}`).show(); // $('#about').show()
+      $('.modal-overlay').hide();
     }
+  }
 
-    projectController.projects = function() {
-      $('.tab-content').hide();
-      $('#projects').show();
-    }
-
-    projectController.about = function() {
-      $('.tab-content').hide();
-      $('#about').show();
-    }
-
-    projectController.contact = function() {
-      $('.tab-content').hide();
-      $('#contact').show();
-    }
-
-    module.projectController = projectController;
-  }) (window);
+  module.projectController = projectController;
+}) (window);

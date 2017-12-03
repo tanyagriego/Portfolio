@@ -1,6 +1,8 @@
-page('/', projectController.index);
-page('/projects', projectController.projects);
-page('/about', projectController.about);
-page('/contact', projectController.contact);
+'use strict';
+
+page('/', projectController.showMenuContent('home'));
+page('/projects', projectController.showMenuContent('projects'));
+page('/about', projectController.showMenuContent('about'));
+page('/contact', projectController.showMenuContent('contact'));
 
 page();

@@ -9,7 +9,7 @@ var projectView = {};
 //     $('.modal-overlay').hide();
 //
 //     // $('.homeBackground').hide();
-//     var tabName= '#' + $(this).attr('data-content');
+    // var tabName= '#' + $(this).attr('data-content');
 //     $(tabName).show();
 //   })
 // };
